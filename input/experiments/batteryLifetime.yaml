@@ -1,0 +1,10 @@
+Name: batteryLifetime
+Mode: combinatorial
+Factors:
+  - Name: batteryLifetime
+    Levels:
+      - 2.0
+      - 3.0
+      - 4.0
+      - 8.0
+      - 12.0

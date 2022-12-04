@@ -1,0 +1,8 @@
+Name: renewableScalingFactor
+Mode: combinatorial
+Factors:
+  - Name: renewableScalingFactor
+    Levels:
+      - 1
+      - 1.7
+      - 3

@@ -1,0 +1,10 @@
+Name: biketocarfactor
+Mode: combinatorial
+Factors:
+  - Name: biketocarfactor
+    Levels:
+      - 0.5
+      - 1.0
+      - 5.0
+      - 10.0
+      - 20.0

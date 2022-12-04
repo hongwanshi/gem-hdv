@@ -1,0 +1,74 @@
+GAMS 25.1.3  r4e34d435fbd Released Oct 30, 2018 WEX-WEI x86 64bit/MS Windows - 11/23/20 13:07:03 Page 1
+gem
+C o m p i l a t i o n
+
+
+   2   
+**** File: C:\Users\hws81\OneDrive\Documents\gem\gem\src\<<gdxName>>.gdx
+**** Msg : Permission denied
+ 184  $gdxin <<gdxName>>
+****                   $510
+**** 510  Unable to open gdx file for $GDXIN
+ 185  $load d r rmob l t td g gtor rmobtor demand trucksharingFactor truckvehicleCapitalCost truckchargerLifetime truckbatteryCapitalCost truckchargerCapitalCost speed sharingFactor travelDistance demandCharge chargerPower chargerCapitalCost chargerDistri
+****      $502
+      butionFactor conversionEfficiency solar wind hydro genCost demandLoad maxGen maxSolar maxWind transCap transCost personalEVChargeEnergyLB personalEVChargeEnergyUB personalEVChargePowerLB personalEVChargePowerUB distCorrection timeCorrection chargeRe
+      locationRatio chargeRelocationCorrection fleetRatio batteryRatio vehicleLifetime batteryLifetime batteryCapitalCost vehicleCapitalCost discountRate chargerLifetime truckdemand truckchargerPower truckchargeRelocationRatio truckchargeRelocationCorrect
+      ion truckfleetRatio truckbatteryRatio truckdistCorrection trucktimeCorrection truckchargerDistributionFactor trucktravelDistance tspeed truckdemandCharge truckvehicleLifetime truckbatteryLifetime
+**** 502  GDXIN  file not open - ignore rest of line
+ 189          chargeRelocationRatio;
+****                              $141
+**** 141  Symbol declared but no values have been assigned. Check for missing
+****         data definition, assignment, data loading or implicit assignment
+****         via a solve statement.
+****         A wild shot: You may have spurious commas in the explanatory
+****         text of a declaration. Check symbol reference list.
+ 191  dailyDiscountRate = ((1 + discountRate)**(1/365)) - 1;
+****                                       $141
+**** 141  Symbol declared but no values have been assigned. Check for missing
+****         data definition, assignment, data loading or implicit assignment
+****         via a solve statement.
+****         A wild shot: You may have spurious commas in the explanatory
+****         text of a declaration. Check symbol reference list.
+ 194          generation.up(g,t) = maxGen(g);
+****                        $352,352    $141,352
+**** 141  Symbol declared but no values have been assigned. Check for missing
+****         data definition, assignment, data loading or implicit assignment
+****         via a solve statement.
+****         A wild shot: You may have spurious commas in the explanatory
+****         text of a declaration. Check symbol reference list.
+**** 352  Set has not been initialized
+ 195          generation.lo(g,t) = 0;
+****                        $352,352
+**** 352  Set has not been initialized
+ 196          trans.up(r,t,o) = transCap(r,o);
+****                   $352,352,352    $141,352,352
+**** 141  Symbol declared but no values have been assigned. Check for missing
+****         data definition, assignment, data loading or implicit assignment
+****         via a solve statement.
+****         A wild shot: You may have spurious commas in the explanatory
+****         text of a declaration. Check symbol reference list.
+**** 352  Set has not been initialized
+ 197          trans.lo(r,t,o) = 0;
+****                   $352,352,352
+**** 352  Set has not been initialized
+ 372  ;
+****  $257
+**** 257  Solve statement not checked because of previous errors
+
+**** 20 ERROR(S)   0 WARNING(S)
+
+
+COMPILATION TIME     =        0.016 SECONDS      3 MB  25.1.3 r4e34d435fbd WEX-WEI
+
+
+USER: Small MUD - 5 User License                     G190103:1723AS-GEN
+      University of California, Davis, Institute of TransportatiDC14694
+      License for teaching and research at degree granting institutions
+
+
+**** FILE SUMMARY
+
+Input      C:\Users\hws81\OneDrive\Documents\gem\gem\src\gem.gms
+Output     C:\Users\hws81\OneDrive\Documents\gem\gem\src\gem.lst
+
+**** USER ERROR(S) ENCOUNTERED
