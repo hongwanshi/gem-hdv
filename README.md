@@ -1,6 +1,5 @@
-# gem
+# Grid-integrated Electric Mobility model v2.0
 
-Grid-integrated Electric Mobility model v2.0
 
 ## Project description
 
